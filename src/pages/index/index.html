@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <main class="main">
+      <div class="tabs">
+        <div class="tabs-nav">
+          <button class="tabs__nav-btn" data-tab="#tab_1" type="button">timer</button>
+          <button class="tabs__nav-btn" data-tab="#tab_2" type="button">calcdate</button>
+        </div>
+        <div class="tabs-content">
+          <div class="tubs__item tabs-timer" id="tab_1">
+            <form class="timer" id="timer" action="#">
+              <h3 class="timer__h3">Таймер </h3>
+              <ul class="timer__count-down">
+                <li class="timer__count-hours"></li>
+                <li class="timer__count-minutes"></li>
+                <li class="timer__count-seconds"></li>
+              </ul>
+              <div>
+                <label for="">
+                  <strong>Часы:</strong>
+                  <input class=" timer__input timer__input-hours" type="number">
+
+                  </input>
+                </label>
+                <label for="">
+                  <strong>Минуты:</strong>
+                  <input class="timer__input timer__input-minutes" type="number">
+
+                  </input>
+                </label>
+                <label for="">
+                  <strong>Секунды:</strong>
+                  <input class="timer__input timer__input-second" type="number">
+
+                  </input>
+                </label>
+              </div>
+              <button class="timer__btn-start">Start</button>
+              <button class="timer__btn-stop" type="submit">Stop</button>
+            </form>
+          </div>
+          <div class="tubs__item tabs-calcdate" id="tab_2">
+            <form id="datecalc">
+              <h3 class="datecalc__title">Калькулятор дат</h3>
+              <label>
+                <strong>Первая дата:</strong>
+                <input type="date" id="firstDate" name="firstDate" />
+              </label>
+              <label>
+                <strong>Вторая дата:</strong>
+                <input type="date" id="secondDate" name="secondDate" />
+              </label>
+              <button type="submit">Расчитать промежуток</button>
+              <p id="datecalc__result"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer"></footer>
+  </div>
+</body>
+
+</html>
