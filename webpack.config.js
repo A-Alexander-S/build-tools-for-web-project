@@ -39,6 +39,7 @@ module.exports = {
     rules: [
       {
         test: /\.scss$/i,
+        // dependency: { not: ['url'] },
         use: [
           MiniCssExtractPlugin.loader,
           "css-loader",
@@ -52,9 +53,18 @@ module.exports = {
           filename: 'images/[name][ext][query]'
         }
       },
+      // {
+      //   test: /\.mp3$/,
+      //   dependency: { not: ['url'] },
+      //   include: PATH.source + "assets",
+      //   type: 'asset/resource',
+      //   generator: {
+      //     filename: "mp3/[name][ext]"
+      //   }
+      // },
       {
         test: /\.ico$/,
-        dependency: { not: ['url'] },
+        // dependency: { not: ['url'] },
 
         use: [
           {
