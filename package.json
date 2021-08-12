@@ -1,0 +1,36 @@
+{
+  "name": "build-tools-for-web-project",
+  "version": "1.0.0",
+  "description": "build-tools-for-web-project",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "watch": "webpack --mode development --watch",
+    "server": "webpack serve --mode development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/A-Alexander-S/build-tools-for-web-project.git"
+  },
+  "author": "Akimov Alexander",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/A-Alexander-S/build-tools-for-web-project/issues"
+  },
+  "homepage": "https://github.com/A-Alexander-S/build-tools-for-web-project#readme",
+  "devDependencies": {
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
+    "css-loader": "^6.2.0",
+    "howler": "^2.2.3",
+    "html-webpack-plugin": "^5.3.2",
+    "mini-css-extract-plugin": "^2.1.0",
+    "node-sass": "^6.0.1",
+    "sass": "^1.36.0",
+    "sass-loader": "^12.1.0",
+    "style-loader": "^3.2.1",
+    "webpack": "^5.48.0",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
