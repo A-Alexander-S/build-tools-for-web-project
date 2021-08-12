@@ -53,19 +53,34 @@ module.exports = {
           filename: 'images/[name][ext][query]'
         }
       },
+      {
+        test: /\.mp3$/,
+        // dependency: { not: ['url'] },
+        // include: PATH.source + "assets",
+        type: 'asset/resource',
+        generator: {
+          filename: "mp3/[name][ext]"
+        }
+      },
       // {
-      //   test: /\.mp3$/,
-      //   dependency: { not: ['url'] },
-      //   include: PATH.source + "assets",
+      //   test: /\.mp4$/,
+      //   // dependency: { not: ['url'] },
+      //   // include: PATH.source + "assets",
       //   type: 'asset/resource',
       //   generator: {
-      //     filename: "mp3/[name][ext]"
+      //     filename: "mp4/[name][ext]"
       //   }
       // },
       {
+        test: /\.mp4$/i,
+        loader: 'file-loader',
+        options: {
+          name: '[path][name].[ext]',
+        },
+      },
+      {
         test: /\.ico$/,
         // dependency: { not: ['url'] },
-
         use: [
           {
             loader: 'url-loader',
